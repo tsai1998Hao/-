@@ -363,7 +363,23 @@
     }
 }
 @media (max-width:380px){
-
+    .searchOut{
+        width: 20%;
+    }
+    .glassButton2{
+        /* color: #f1f1f1; */
+        border: none;
+        height: 40px;
+        width: 220px;
+        border-radius: 20px;
+         background-color:  rgba(34, 34, 34, 1); 
+        /* position: absolute;
+        right: 100 px; */
+        display: block;
+    }
+    .glassButton2in{
+        color: white;
+    }
     .videoName{
         width: 130%;
     }
