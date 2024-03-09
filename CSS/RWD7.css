@@ -334,3 +334,37 @@
 
 
 }
+
+@media (max-width:500px){
+    .nav{
+        width: 80vw;
+    }
+    .searchDiv{
+        display: none;
+    }
+    .searchDiv > i{
+        margin-right: 0;
+    }
+    .mainDivDivDivVideo{
+        width: 60%;
+    }
+    .adVideoOut{
+        width: 190%;
+
+    }
+    .adVideo{
+        width: 120%;
+    }
+    .videoOut{
+        width: 100%;
+    }
+    .videoName{
+        width: 160%;
+    }
+}
+@media (max-width:380px){
+
+    .videoName{
+        width: 130%;
+    }
+}
