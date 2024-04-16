@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manyThings</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinite Scroll</title>
+<style>
+  #content {
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid green;
+  }
+  .item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div id="content">
+</div>
+
+
+<script>
+  const content = document.getElementById('content');
+  let pageNumber = 1;
+
+  function fetchData() {
+    // Simulated asynchronous data fetching
+    setTimeout(() => {
+      for (let i = 0; i < 20; i++) {
+        const newItem = document.createElement('div');
+        newItem.classList.add('item');
+        newItem.textContent = `Item ${i + 1 + (pageNumber - 1) * 10}`;
+        content.appendChild(newItem);
+      }
+      pageNumber++;
+    }, 500);
+  }
+
+  function isScrollAtBottom() {
+    return window.innerHeight + window.scrollY >= document.body.offsetHeight;
+  }
+
+
+
+  
+  function handleScroll() {
+    if (isScrollAtBottom()) {
+      fetchData();
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+
+  // Initial data load
+  fetchData();
+</script>
+</body>
+</html>
+
+</body>
+</html>

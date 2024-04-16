@@ -249,10 +249,11 @@
 
 
                 <!-- <div style="height: 100px;">test</div>-->
-                <!-- <button onclick="loadData()" style="height: 20px; width: 50px;">test</button>  -->
+                <button onclick="loadData()" style="height: 20px; width: 50px;">test</button> 
 
 <!-- 影片們 6-->
             <div class="videosSpace">
+
                 <div class="vidIconDes">
                     <div class="videoOut">
                          <iframe class="video" src="https://www.youtube.com/embed/5x9mNMnG9lY?si=61rAdSBbfrQeFDxX">
@@ -443,12 +444,11 @@ function loadData(){
     .then((vidJSON)=>{
         console.log(vidJSON);
 
-        for(let i=0;i<7;i++){
+        for(let i=1;i<8;i++){
             let videoData=vidJSON[i];
 
             const videosSpace= document.querySelector(".videosSpace");
             videosSpace.innerHTML +=`
-            
             <div class="vidIconDes">
                     <div class="videoOut">
                          <iframe class="video" src="${videoData.video_link}">
@@ -503,26 +503,13 @@ loadData();
         if(!pageIfTop&&pageTopState()){
             pageIfTop=true;
 
-            // console.log("到底了");
-
-
-
-
             //要發生的事
-            
-
-            fetch("youtube_2.json")
-            .then((res)=>res.json())
-            .then((vidJSON)=>{
-            // console.log(vidJSON);
-            for(let i=0;i<8;i++){
-            let videoData=vidJSON[i];
 
             const createVid= document.createElement("div");
             createVid.className="vidIconDes";
 
 
-            createVid.innerHTML=`<div class="vidIconDes">
+            createVid.innerText=`<div class="vidIconDes">
                     <div class="videoOut">
                          <iframe class="video" src="${videoData.video_link}">
                         </iframe>    
@@ -551,22 +538,21 @@ loadData();
             const vidIconDes= document.querySelector('.vidIconDes');
             const videosSpace= document.querySelector(".videosSpace");
             videosSpace.appendChild(createVid);
+            console.log("到底了");
 
-}
 
-            })
             //要發生的事
 
             //滾輪到page底部後過一秒才會更改pageIfTop狀態，讓if的判斷式可以是true
             setTimeout(() => {
                 pageIfTop = false; // 在延遲後設置回 false，以便下次滾動時可以再次觸發載入資料
-            }, 2000); // 延遲一秒以避免太快觸發多次載入資料
+            }, 1000); // 延遲一秒以避免太快觸發多次載入資料
 
         }
     }
 
 
-    window.addEventListener("scroll",isScrollAtBottom);
+    window.addEventListener("scroll",isScrollAtBottom)
 
 </script>
 

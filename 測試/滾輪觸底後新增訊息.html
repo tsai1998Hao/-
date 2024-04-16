@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滾輪觸底後新增訊息</title>
+</head>
+<body style="height: 1000px;">
+
+<div id="here"></div>
+    <script>
+
+        //為了讓滾輪到底時，事件只觸發一次，後面會用到
+        let pageIfTop=false; 
+
+        //檢測滾輪位置是否到底，到底的話回傳true
+        function pageTopState(){
+            return window.innerHeight + window.scrollY >= document.body.offsetHeight;
+        }
+
+
+
+
+        function isScrollAtBottom (){
+            if(!pageIfTop&&pageTopState()){
+                pageIfTop=true; //不能用let!!!!! 變成true之後就不會馬上又觸發涵式
+
+                //在瀏覽器上你到底了
+                const here= document.querySelector("#here");
+                const createDiv=document.createElement("div");
+                createDiv.innerHTML=`到底了<br>`
+                here.appendChild(createDiv);
+                //在瀏覽器上你到底了
+
+
+                //滾輪到page底部後過一秒才會更改pageIfTop狀態，讓if的判斷式可以是true
+                setTimeout(() => {
+                    pageIfTop = false; // 在延遲後設置回 false，以便下次滾動時可以再次觸發新增圖片
+                }, 1000); // 延遲一秒以避免太快觸發多次新增圖片
+
+            }else{
+            console.log("沒到底");
+            }
+        }
+
+
+    //檢測畫面的滾輪，使其執行isScrollAtBottom涵式
+    window.addEventListener("scroll",isScrollAtBottom)
+
+    </script>
+</body>
+</html>

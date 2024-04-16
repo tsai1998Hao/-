@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll</title>
+</head>
+
+<script>
+
+    window.onscroll = function () {
+        scrollFn();
+    };
+    
+    function scrollFn() {
+        //var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var winScroll =document.documentElement.scrollTop;
+        var height =
+            document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("scrollBar").style.width = scrolled + "%";
+
+
+
+        //console.log(document.body.scrollTop); //目前還沒用到?
+        //console.log(document.documentElement.scrollTop);  //頁面捲動的高度，最上面是0，越往下月增加。可以知道目前的位置。
+        //console.log(window.scrollY);                      //頁面捲動的高度，最上面是0，越往下月增加。可以知道目前的位置。
+
+        //console.log(document.documentElement.scrollHeight); //scrollHeight 畫面中元素的總高度，包括導致溢出而未顯示的部分。會增加
+
+        //console.log(document.body.offsetHeight); //document.body.offsetHeight  body元素的高度
+
+
+        //console.log(document.documentElement.clientHeight);  //clientHeight 可見的元素的高度。固定不變
+        //console.log(innerHeight);                            //innerHeight  視窗的高度(?)。固定不變
+    }
+    
+    </script>
+
+
+
+<style>
+    body{
+        height: 2000px;
+        /* border: 2px solid green; */
+    }
+    .header {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+.scroll-container {
+	width: 100%;
+	height: 8px;
+	background: #ccc;
+}
+
+.scroll-bar {
+	height: 8px;
+	background: #9c64aa;
+	width: 10%;
+}
+</style>
+<body>
+    <div class="header">
+
+        <h2>Scroll Indicator（滾動指示器）</h2>
+
+        <div class="scroll-container">
+          <div class="scroll-bar" id="scrollBar"></div>
+        </div>
+
+
+
+    </div>
+      
+      <!-- <div style="height: 100px; background-color: red;">content...</div> -->
+</body>
+
+
+
+
+</html>

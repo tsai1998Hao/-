@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append們</title>
+</head>
+<body>
+    <div class="a1" style="border: 2px solid greenyellow; height: 300px; width: 300px;">aaaa
+        <div class="b1" style="border: 2px solid rgb(255, 116, 47); height: 100px; width: 100px;">bbbb</div>
+    </div>
+    
+</body>
+    <script>
+        const a1=document.querySelector('.a1');
+        const b1=document.querySelector('.b1');
+
+        const crtTest=document.createElement('div');
+        crtTest.innerText="123";
+        const crtTest2=document.createElement('div');
+        crtTest2.innerText="456";
+
+        a1.appendChild(crtTest);
+        a1.append(crtTest2);
+
+    </script>
+</html>

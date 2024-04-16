@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滾輪觸底後新增圖片</title>
+</head>
+
+
+<style>
+  body{
+    height: 900px;
+    background-color: rgba(60, 203, 60, 0.642);
+  }
+  .cat{
+    border: 1px solid blue;
+
+  }
+  .catImg{
+    height: 300px;
+    margin-left: 40vw;
+    border: 1px solid red;
+  }
+
+</style>
+
+
+
+<body>
+
+  <button onclick="createImg()">按按看</button>
+
+
+  <div class="cat">
+    <img class="catImg" src="pic/cat01.jpg"></img>
+    <img class="catImg" src="pic/cat01.jpg"></img>
+    <img class="catImg" src="pic/cat01.jpg"></img>
+  </div>
+
+
+
+
+
+  <script>
+
+    const cat=document.querySelector('.cat');
+    const catImg=document.querySelector('.catImg');
+
+    let isAddingImage = false;
+
+    function createImg(){
+      setTimeout(()=>{
+        const createImgAction=document.createElement('img');
+        createImgAction.className='catImg';
+        createImgAction.src=`pic/cat01.jpg`;
+        cat.appendChild(createImgAction);
+        console.log(createImgAction.src)
+      },500)
+    };
+
+
+
+    function isScrollAtBottom (){
+      return window.innerHeight + window.scrollY >= document.body.offsetHeight;
+    }
+
+
+    //監測滾輪
+    function showData(){
+      if(!isAddingImage && isScrollAtBottom()){
+        isAddingImage = true; // 設置為 true，表示正在新增圖片
+        createImg();
+        setTimeout(() => {
+          isAddingImage = false; // 在延遲後設置回 false，以便下次滾動時可以再次觸發新增圖片
+        }, 1000); // 延遲一秒以避免太快觸發多次新增圖片
+      }
+    }
+
+    window.addEventListener('scroll',showData)
+
+
+
+    </script>
+    
+</body>
+</html>

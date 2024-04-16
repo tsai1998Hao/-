@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增don</title>
+</head>
+<body style="height: 900px;">
+
+  <button onclick="createCCC()">按按看</button>
+
+<div class="a">
+    123
+</div>
+<div class="b">
+    create here!
+</div>
+
+  
+
+
+  <!-- <div class="ck">
+    <div>1</div>
+    <div>2</div>
+  </div> -->
+
+
+
+  <script>
+
+const aa=document.querySelector('.a');
+const bb=document.querySelector('.b');
+
+
+function createCCC(){
+  const createCC=document.createElement('div');
+  createCC.textContent="成功了吧";
+  bb.appendChild(createCC);
+
+};
+
+
+
+
+
+
+        
+
+
+// let oldDiv = document.querySelector('.ck')
+// let div = document.createElement('div')
+// div.textContent = 'fuck簡單的東西幹嘛寫這麼複雜'
+// oldDiv.appendChild(div)
+
+
+console.log(document.body.offsetHeight);
+
+    </script>
+    
+</body>
+</html>

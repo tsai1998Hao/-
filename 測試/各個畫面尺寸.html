@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>各個畫面尺寸</title>
+</head>
+
+
+<style>
+  body{
+    height: 900px;
+    background-color: rgba(60, 203, 60, 0.642);
+  }
+  .cat{
+    border: 1px solid blue;
+
+  }
+  .catImg{
+    height: 300px;
+    margin-left: 40vw;
+    border: 1px solid red;
+  }
+
+</style>
+
+<!-- //滾輪觸底後新增圖片(有bug) -->
+<!-- 各個畫面尺寸 -->
+<body>
+
+  <button onclick="createImg()">按按看</button>
+
+
+  <div class="cat">
+    <img class="catImg" src="pic/cat01.jpg"></img>
+    <img class="catImg" src="pic/cat01.jpg"></img>
+    <img class="catImg" src="pic/cat01.jpg"></img>
+
+  </div>
+
+
+
+
+
+  <script>
+
+const cat=document.querySelector('.cat');
+const catImg=document.querySelector('.catImg');
+
+
+function createImg(){
+  const createImgAction=document.createElement('img');
+  createImgAction.className='catImg';
+  createImgAction.src=`pic/cat01.jpg`;
+  cat.appendChild(createImgAction);
+  console.log(createImgAction.src)
+};
+
+
+
+//監測滾輪
+function showData(){
+  // console.log(innerHeight); //視窗的高度(?)。固定不變
+  // console.log(window.scrollY); //顯示現在位置
+
+
+  // console.log(document.body.offsetHeight);   //body的高度。固定不辨
+
+  // console.log(innerHeight,"1"); //視窗高度應該就是固定的785px(我的電腦)
+  // console.log(window.scrollY,"2"); //顯示現在滾輪位置
+  // console.log(document.body.offsetHeight,"3");   //body的高度。固定不變
+
+ if(innerHeight+window.scrollY>document.body.offsetHeight){
+  createImg();
+  console.log(innerHeight,"1"); //視窗高度應該就是固定的785px(我的電腦)
+  console.log(window.scrollY,"2"); //顯示現在滾輪位置
+  console.log(document.body.offsetHeight,"3");   //body的高度。固定不變
+}
+
+
+
+}
+
+
+window.addEventListener('scroll',showData)
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,16 +1,19 @@
 /* 影片 */
 
-.mainDivDivVideos{
+.videosSpace{
     display: flex;
     flex-wrap: wrap;
-    height: 800px;
+    /* height: 800px; ?????????*/
 
 }
-.mainDivDivDivVideo{
+.vidIconDes{
     width: 15.5%;
     height: 22%;
     margin: 8px;
+    /* border: 2px solid red; */
+
 }
+/* //////////////////////////////////////////////////// */
 .videoOut{
     width: 320px;
     height: 196px;
@@ -19,9 +22,37 @@
     width: 320px;
     height: 176px;
 }
+
+
+/* //////////////////////////////////////////////////// */
+
+.vidDetailOut{
+    display:flex; 
+    height: 130px; 
+    width:300px;
+    /* border: 2px solid red; */
+
+}
 .youtuberIcon{
     height: 35px;
     margin-right: 10px;
+    border-radius: 50px;
+    /* border: 2px solid red; */
 }
+.videoDes{
+    /* border: 2px solid red; */
 
+}
+.videoName{
+    /* border: 2px solid red; */
+
+}
+.videoMaker{
+    margin-top:10px;
+    color:grey;
+    font-size:13px;
+}
+.videoWatchNum{
+    color:grey;
+}
 /* 影片 */
