@@ -559,7 +559,7 @@ function loadData(){
             //滾輪到page底部後過一秒才會更改pageIfTop狀態，讓if的判斷式可以是true
             setTimeout(() => {
                 pageIfTop = false; // 在延遲後設置回 false，以便下次滾動時可以再次觸發載入資料
-            }, 2000); // 延遲一秒以避免太快觸發多次載入資料
+            }, 1500); // 延遲一秒以避免太快觸發多次載入資料
 
         }
     }
