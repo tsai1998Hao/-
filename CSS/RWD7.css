@@ -369,7 +369,16 @@
     }
     .videoOut{
         width: 100%;
+        /* border:2px solid red; */
     }
+    /* .video{
+        width: 100%;
+    } */
+    .videoTwo{
+        width: 300%;
+        /* border: 2px solid blue; */
+    }
+    /* 不知道為什麼會跑版 所以給他們在一個class@@ */
     .videoName{
         width: 160%;
     }

@@ -28,9 +28,7 @@
      <!-- 影片們 -->
 
 
-     <!-- RWD的media調整 -->
-     <link rel="stylesheet" href="CSS/RWD7.css">
-     <!-- RWD的media調整 -->
+
 
 
 
@@ -255,8 +253,8 @@
             <div class="videosSpace">
                 <div class="vidIconDes">
                     <div class="videoOut">
-                         <iframe class="video" src="https://www.youtube.com/embed/5x9mNMnG9lY?si=61rAdSBbfrQeFDxX">
-                        </iframe>    
+                         <img class="video" src="https://picsum.photos/id/237/200/100">
+                        </img>    
                     </div>
 
                     <div class="vidDetailOut">
@@ -275,7 +273,7 @@
                     </div>
                 </div>
 
-                <!-- <div class="vidIconDes">
+                <div class="vidIconDes">
                     <div class="videoOut">
                          <iframe class="video" src="https://www.youtube.com/embed/y94RsqtEADQ?si=M0VL_GWV8-Ow68QZ&amp;controls=0"></iframe>   
                     </div>
@@ -293,9 +291,9 @@
                             </div>
                         </div>
                     </div>
-                </div>   -->
+                </div>
 
-                <!-- <div class="vidIconDes">
+                <div class="vidIconDes">
                     <div class="videoOut">  
                         <iframe class="video" src="https://www.youtube.com/embed/5x9mNMnG9lY?si=61rAdSBbfrQeFDxX">
                         </iframe>    
@@ -314,9 +312,9 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
-                <!-- <div class="vidIconDes">
+                <div class="vidIconDes">
                     <div class="videoOut">
                         <iframe class="video" src="https://www.youtube.com/embed/5x9mNMnG9lY?si=61rAdSBbfrQeFDxX">
                         </iframe>    
@@ -335,9 +333,9 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
-                <!-- <div class="vidIconDes">
+                <div class="vidIconDes">
                     <div class="videoOut">
                         <iframe class="video" src="https://www.youtube.com/embed/5x9mNMnG9lY?si=61rAdSBbfrQeFDxX">
                         </iframe>    
@@ -356,9 +354,9 @@
                             </div>
                         </div>
                     </div>
-                </div>  -->
+                </div>
 
-                <!-- <div class="vidIconDes">
+                <div class="vidIconDes">
                     <div class="videoOut" >
                         <iframe class="video"  src="https://www.youtube.com/embed/5x9mNMnG9lY?si=61rAdSBbfrQeFDxX">
                         </iframe>    
@@ -377,9 +375,9 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
-                <!-- <div class="vidIconDes">
+                 <div class="vidIconDes">
                     <div class="videoOut" >
                         <iframe class="video"  src="https://www.youtube.com/embed/5x9mNMnG9lY?si=61rAdSBbfrQeFDxX">
                         </iframe>    
@@ -398,9 +396,9 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
-                <!-- <div class="vidIconDes">
+                 <div class="vidIconDes">
                     <div class="videoOut" >
                         <iframe class="video"  src="https://www.youtube.com/embed/5x9mNMnG9lY?si=61rAdSBbfrQeFDxX">
                         </iframe>    
@@ -419,7 +417,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
                     
 
@@ -475,7 +473,7 @@ function loadData(){
     })
     }
 
-loadData();
+// loadData();
 
 ///更改資料載入形式
 
@@ -521,10 +519,10 @@ loadData();
             const createVid= document.createElement("div");
             createVid.className="vidIconDes";
 
-
+//給另一個class videoTwo是為了解決迷的排版問題
             createVid.innerHTML=`<div class="vidIconDes">
                     <div class="videoOut">
-                         <iframe class="video" src="${videoData.video_link}">
+                         <iframe class="video videoTwo" src="${videoData.video_link}">
                         </iframe>    
                     </div>
 
@@ -569,6 +567,9 @@ loadData();
     window.addEventListener("scroll",isScrollAtBottom);
 
 </script>
+     <!-- RWD的media調整 -->
+     <link rel="stylesheet" href="CSS/RWD7.css">
+     <!-- RWD的media調整 -->
 
 
 </body>
