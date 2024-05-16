@@ -32,9 +32,9 @@
 
 
   <div class="cat">
-    <img class="catImg" src="pic/cat01.jpg"></img>
-    <img class="catImg" src="pic/cat01.jpg"></img>
-    <img class="catImg" src="pic/cat01.jpg"></img>
+    <img class="catImg" src="/pic/cat01.jpg"></img>
+    <img class="catImg" src="/pic/cat01.jpg"></img>
+    <img class="catImg" src="/pic/cat01.jpg"></img>
   </div>
 
 
@@ -52,7 +52,7 @@
       setTimeout(()=>{
         const createImgAction=document.createElement('img');
         createImgAction.className='catImg';
-        createImgAction.src=`pic/cat01.jpg`;
+        createImgAction.src=`/pic/cat01.jpg`;
         cat.appendChild(createImgAction);
         console.log(createImgAction.src)
       },500)

@@ -9,7 +9,7 @@ body{
 iframe{
     border:none;
 }
-.mainDiv{
-    width: 100vw;
-    height: 1000px;
+main{
+    display: flex;
+    /* border: 1px solid green; */
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己來</title>
+    <link rel="stylesheet" href="./自己來.css">
+</head>
+<body>
+
+
+    <nav>
+        <div class="openButton">show出來</div>
+    </nav>
+    
+    <div>
+        <ul class="showList">
+            <li>項目1</li>
+            <li>項目2</li>
+            <li>項目3</li>
+            <li>項目4</li>
+        </ul>
+    </div>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const openButton = document.querySelector('.openButton');
+          const showList = document.querySelector('.showList');
+
+          openButton.addEventListener('click', function() {
+            openButton.classList.toggle('openButton2');
+            showList.classList.toggle('showList2');
+          });
+        });
+
+
+</script>
+
+
+</body>
+</html>

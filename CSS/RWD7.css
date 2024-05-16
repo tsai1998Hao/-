@@ -34,6 +34,19 @@
 /*三個:1575px-~~~~1313px */
 @media (max-width:1576px){
 
+.main{
+    width: 99vw;
+}
+
+
+
+/*  上面欄位2 */
+.nav{
+    width: 94vw;
+}
+/*  上面欄位2 */
+
+
 
 /* 廣告 5 */
 .adImg{
@@ -43,12 +56,22 @@
 
 
 /* 影片們 6 */
+
+
 .vidIconDes{
-    width: 25%;
+    width: 26vw;
     height: 29%;
     margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
 }
 /* 影片們 6 */
+
+/* 載入的漩渦 8 */
+.loadOut{
+    left: 48vw;
+}
+/* 載入的漩渦 8 */
 
 }
 
@@ -58,65 +81,31 @@
 /*!!!!!!!!!!!!三個，左側縮圖:1312px-~~~~1081px */
 @media (max-width:1473px){
 
+    /* 上面欄位 2 */
+    .nav{
+    width: 95vw;
+}
+    /* 上面欄位 2 */
+
 /* 左側欄位 3*/
+
     .mainAsideLeft{
-        width: 73px;
-        min-width: 73px;
+        position: absolute;
+        left: -300px;
+        width: 250px;
+        /* height: 100%; */
+        background-color: rgb(26, 34, 26);
+        opacity: 0.9;
+        transition: 400ms ease;
     }
-
-    .aside_icon_title {
-        /* border: 2px solid yellow; */
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        padding-left: 0;
-        margin-bottom: 30px;
-    }
-
-    .subscribe{
-        border: none;
-    }
-    .aside_icon_titleDis{
-        /* border: 2px solid yellow; */
-        display: none;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        /* 要注意到哈哈 */
-        padding: 0;
-        /* 要注意到哈哈 */
-
-    }
-    .aside_icon_title >i{
-        /* border: 1px solid red; */
-        /* 要注意到哈哈 */
-        margin-bottom: 10px;
-        margin-right: 0;
-        /* 要注意到哈哈 */
-    }
-    .aside_icon_titleDis >i{
-        /* border: 1px solid red; */
-        /* 要注意到哈哈 */
-        margin-right: 0;
-        /* 要注意到哈哈 */
-
+    .openMainAsideLeft{
+        transform: translateX(300px);
     }
 
 
+/* 左側欄位3*/
 
-
-    .aside_icon_title >div {
-        /* border:  solid 2px blue; */
-        font-size: 10px;
-    }
-    .aside_icon_titleDis >div{
-        /* border:  solid 2px blue;mainDivDivtypes */
-        font-size: 10px;
-
-    }
-/* 左側欄位 3*/
-/* <!-- 上面影片種類 4 --> */
+/*上面影片種類4*/
 
     .newEar{
         display: none;
@@ -128,19 +117,64 @@
 
 /* <!-- 影片們 6--> */
 
-    .vidIconDes{
-        width: 31%;
-        height: 26.5%;
 
+    .videosSpace{
+        /* width: 80vw; */
+        border: 2px solid red;
+        justify-content: space-around;
+
+    }
+    .videoLink{
+        /* height: 35vh;
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap; */
+
+        height: 35vh;
+        /* border: 2px solid blue; */
+    }
+    .vidIconDes{
+        /* width: 32.5vw; */
+        height: 26.5%;
+        margin: 0;
+        align-content: center;
+        align-items: center;
     }
  
     /* <!-- 影片們 6--> */
 
-
-
-
 }
 
+@media (max-width:1450px){
+/* <!-- 影片們 6--> */
+
+
+.videosSpace{
+    width: 97vw;
+    border: 2px solid red;
+    justify-content: space-around;
+
+}
+.videoLink{
+    /* height: 35vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap; */
+
+    height: 50vh;
+    border: 2px solid blue;
+}
+.vidIconDes{
+    border: 2px solid green;
+}
+
+/* <!-- 影片們 6--> */
+
+}
 
 
 
@@ -195,7 +229,10 @@
 
 /* 自己加的 */
 @media  (max-width: 1004px){
+    
     /* <!-- 上面欄位 2 --> */
+
+    
     .searchout0{
         width: 50vw;
         /* border: 10px solid green; */
@@ -259,19 +296,6 @@
 }
 
 /* 影片們 6 */
-
-
-}
-
-@media (max-width:720px){
-
-    /* <!-- 左側欄位 3 --> */
-    .mainAsideLeft{
-        display: none;
-    }
-
-
-    /* <!-- 左側欄位 3 --> */
 
 
 }

@@ -1,0 +1,101 @@
+.nav{
+    /* border: 2px solid red; */
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navInDiv{
+    display: flex ;
+    align-items: center;
+}
+.fa-bars{
+    cursor: pointer;
+    /* margin-right: 20px; */
+
+}
+.navLeft{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    width: 135px;
+    /* border: 2px solid yellow; */
+}
+.navImg{
+    width: 90px;
+    height: 20px;
+    margin-left: 25px;
+}
+
+
+
+/* //////////////// */
+.navMid{
+    /* border: 2px solid green; */
+    width: 657px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+}
+.searchInput{
+    background-color: black;
+    width: 520px;
+    height: 36px;
+    padding-left: 20px;
+    color: white;
+    border: 0.5px solid rgba(48, 48, 48, 1);
+
+}
+.searchInput:focus{
+    border: none;
+    outline: rgba(28, 98, 185, 1) 1px solid;
+}
+
+
+.glassButton{
+    background-color: rgba(34, 34, 34, 1);
+    border: 0.5px solid #f1f1f1;
+    background-color:  rgba(34, 34, 34, 1);
+    color: #f1f1f1;
+    border: none;
+    height: 42px;
+    width: 63px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: -50px;
+    margin-left: 1px;
+
+
+}
+.microOut{
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.iconMirco{
+    /* background-color: red; */
+    color: white;
+}
+
+/* //////////////// */
+
+
+
+
+
+
+.navRight{
+    /* border: 2px solid rgb(128, 43, 0); */
+    margin-right: 44px;
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+.navRightItem{
+    font-size: 24px;
+}

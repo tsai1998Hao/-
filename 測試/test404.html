@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>模擬 500 內部伺服器錯誤</title>
+</head>
+<body>
+
+<h2>模擬 500 內部伺服器錯誤</h2>
+<button onclick="simulateError()">模擬錯誤</button>
+
+<script>
+function simulateError() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "/invalid-url", true); // 使用一個不存在的URL來觸發錯誤
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4) {
+      if (xhr.status == 500) {
+        alert("內部伺服器錯誤已觸發！");
+      } else {
+        alert("請求完成但未返回預期的500錯誤。狀態碼：" + xhr.status);
+      }
+    }
+  };
+  xhr.send();
+}
+</script>
+
+</body>
+</html>

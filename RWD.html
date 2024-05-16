@@ -28,10 +28,9 @@
      <!-- 影片們 -->
 
 
-
-
-
-
+    <!-- 載入的漩渦 -->
+    <link rel="stylesheet" href="CSS/RWD8.css">
+    <!-- 載入的漩渦 -->
 
 
     <!-- icon -->
@@ -56,33 +55,28 @@
 <!-- 上面欄位 2 -->
     <nav class="nav">
         <div class="navInDiv">
-            <i style="margin-right: 20px;" class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="showList()"></i>
             <img class="navImg" src="pic/Youtube-Logo-White-PNG.png" alt="">
-
-
         </div>
-
 
         <div class="searchOut">
             <div class="searchout0">
                 <div class="searchDiv">
-                    <input class="searchInput" type="text"  
-                    placeholder="加油"
-                    value="">
+                    <input class="searchInput" type="text" placeholder="加油"value="">
                     <button class="glassButton">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-
-
                 </div>
-
             </div>
+
             <button class="glassButton2">
                 <i class="glassButton2in fa-solid fa-magnifying-glass"></i>
             </button>
+
             <div class="navDivMicro">
                 <i class="fa-solid fa-microphone iconMirco"></i>
             </div>
+
         </div>
 
 
@@ -100,93 +94,102 @@
 
 
 
-    <main style="display: flex;">
+    <main class="main" style="display: flex;">
 
 
 
 
 <!-- 左側欄位 3 -->
-        <aside class="mainAsideLeft">
 
-            <div class="aside_icon_title ">
-                <i class="fa-solid fa-house"></i>                
-                <div>首頁</div>
-            </div>
-            <div class="aside_icon_title">
-                <i class="fa-solid fa-bolt"></i>               
-                <div>Shorts</div>
-            </div>
-            <div class="aside_icon_title subscribe">
-                <i class="fa-solid fa-clapperboard"></i>             
-                <div>訂閱內容</div>
-            </div>
+        <div class="mainAsideLeftOut">
 
 
-            <div class="aside_icon_title yoruContent trans">
-                <i class="fa-solid fa-image-portrait"></i>
-                <div>你的內容2</div>
-            </div>
+            <aside class="mainAsideLeft">
+
+                <div class="aside_icon_title ">
+                    <i class="fa-solid fa-house"></i>                
+                    <div>首頁</div>
+                </div>
+                <div class="aside_icon_title">
+                    <i class="fa-solid fa-bolt"></i>               
+                    <div>Shorts</div>
+                </div>
+                <div class="aside_icon_title subscribe">
+                    <i class="fa-solid fa-clapperboard"></i>             
+                    <div>訂閱內容</div>
+                </div>
+    
+    
+                <div class="aside_icon_title yoruContent trans">
+                    <i class="fa-solid fa-image-portrait"></i>
+                    <div>你的內容2</div>
+                </div>
+    
+    
+    
+    
+                <div class="aside_icon_titleDis yoruContent">
+                    <div style="margin-right: 15px;" >你的內容</div>
+                    <i style="font-size: 15px;"  class="fa-solid fa-chevron-right"></i>
+                </div>
+    
+                <div class="aside_icon_titleDis">
+                    <i class="fa-solid fa-house-user  disappear1312px"></i>              
+                    <div>你的頻道</div>
+                </div>
+    
+                <div class="aside_icon_titleDis">
+                    <i class="fa-solid fa-clock-rotate-left"></i>             
+                    <div>觀看紀錄</div>
+                </div>
+    
+                <div class="aside_icon_titleDis">
+                    <i class="fa-brands fa-youtube"></i>             
+                    <div>你的影片</div>
+                </div>            
+                <div class="aside_icon_titleDis">
+                    <i class="fa-regular fa-clock"></i>               
+                    <div>稍後觀看</div>
+                </div>            
+                <div class="aside_icon_titleDis showMore">
+                    <i style="font-size: 15px;" class="fa-solid fa-chevron-down"></i>                
+                    <div>&nbsp顯示更多</div>
+                </div>
+    
+                <div class="aside_icon_titleDis yoruContent">
+                    <div>訂閱內容</div>
+                </div>
+                
+                <div class="aside_icon_titleDis">
+                    <img class="subscribeMaker" src="pic/cat.png" alt="">
+                    <div>Adamusic</div>
+                </div>      
+                <div class="aside_icon_titleDis">
+                    <img class="subscribeMaker" src="pic/cat.png" alt="">
+                    <div>しゃろう Sharou</div>
+                </div> 
+                <div class="aside_icon_titleDis">
+                    <img class="subscribeMaker" src="pic/cat.png" alt="">
+                    <div>超粒方</div>
+                </div> 
+                <div class="aside_icon_titleDis">
+                    <img class="subscribeMaker" src="pic/cat.png" alt="">
+                    <div>台灣索尼音樂</div>
+                </div> 
+                <div class="aside_icon_titleDis">
+                    <img class="subscribeMaker" src="pic/cat.png" alt="">
+                    <div>腦組織科學</div>
+                </div> 
+                <div class="aside_icon_titleDis">
+                    <img class="subscribeMaker" src="pic/cat.png" alt="">
+                    <div>成功者的語錄</div>
+                </div> 
+            </aside>
+    
 
 
 
-
-            <div class="aside_icon_titleDis yoruContent">
-                <div style="margin-right: 15px;" >你的內容</div>
-                <i style="font-size: 15px;"  class="fa-solid fa-chevron-right"></i>
-            </div>
-
-            <div class="aside_icon_titleDis">
-                <i class="fa-solid fa-house-user  disappear1312px"></i>              
-                <div>你的頻道</div>
-            </div>
-
-            <div class="aside_icon_titleDis">
-                <i class="fa-solid fa-clock-rotate-left"></i>             
-                <div>觀看紀錄</div>
-            </div>
-
-            <div class="aside_icon_titleDis">
-                <i class="fa-brands fa-youtube"></i>             
-                <div>你的影片</div>
-            </div>            
-            <div class="aside_icon_titleDis">
-                <i class="fa-regular fa-clock"></i>               
-                <div>稍後觀看</div>
-            </div>            
-            <div class="aside_icon_titleDis showMore">
-                <i style="font-size: 15px;" class="fa-solid fa-chevron-down"></i>                
-                <div>&nbsp顯示更多</div>
-            </div>
-
-            <div class="aside_icon_titleDis yoruContent">
-                <div>訂閱內容</div>
-            </div>
-            
-            <div class="aside_icon_titleDis">
-                <img class="subscribeMaker" src="pic/cat.png" alt="">
-                <div>Adamusic</div>
-            </div>      
-            <div class="aside_icon_titleDis">
-                <img class="subscribeMaker" src="pic/cat.png" alt="">
-                <div>しゃろう Sharou</div>
-            </div> 
-            <div class="aside_icon_titleDis">
-                <img class="subscribeMaker" src="pic/cat.png" alt="">
-                <div>超粒方</div>
-            </div> 
-            <div class="aside_icon_titleDis">
-                <img class="subscribeMaker" src="pic/cat.png" alt="">
-                <div>台灣索尼音樂</div>
-            </div> 
-            <div class="aside_icon_titleDis">
-                <img class="subscribeMaker" src="pic/cat.png" alt="">
-                <div>腦組織科學</div>
-            </div> 
-            <div class="aside_icon_titleDis">
-                <img class="subscribeMaker" src="pic/cat.png" alt="">
-                <div>成功者的語錄</div>
-            </div> 
-        </aside>
+        </div>
 <!-- 左側欄位 3 -->
   
 
@@ -199,7 +202,7 @@
 
 
 <!-- 上面影片種類 4 -->
-            <div class="whole_types">
+            <!-- <div class="whole_types">
                 <div class="type all_type">所有分類</div>
                 <div class="type">全部</div>
                 <div class="type">音樂</div>
@@ -216,216 +219,298 @@
                 <div class="type moreType">更多</div>
 
 
-            </div>
+            </div> -->
 <!-- 上面影片種類 4 -->
 
-
-
-<!-- 廣告 5 -->
-            <div class="advertisementDiv">
-                <div class="adVideoOut">
-                    <iframe class="adVideo" width="600" height="250" src="https://www.youtube.com/embed/RmgLt7sAcGs?si=cNIaQQTPW5mNHbqB" frameborder="0" allowfullscreen>
-                    </iframe>
-    
-
-                </div>
-                <div class="adImgOut">
-                    <img class="adImg" src="https://picsum.photos/453/117" alt="">
-                    
-                    <div class="adImgLogoOut">
-                        <img class="adImgLogo" src="pic/addidas.webp" alt="">
-                        <div>
-                            <div>你可以的</div>
-                            <div>贊助商廣告 adidas</div>
-                            <div class="adKnow">了解更多</div>
-                        </div>
-                    </div>
-    
-                </div>
-            </div>
-<!-- 廣告 5 -->
-
-
-                <!-- <div style="height: 100px;">test</div>-->
-                <!-- <button onclick="loadData()" style="height: 20px; width: 50px;">test</button>  -->
 
 <!-- 影片們 6-->
             <div class="videosSpace">
                 <div class="vidIconDes">
+                    <a class="videoLink" href="https://www.youtube.com/watch?v=V3A0fxmhYrg">
                     <div class="videoOut">
-                         <img class="video" src="https://picsum.photos/800/400">
-                        </img>    
+                         <img class="video" src="pic/test01.png">
                     </div>
-
                     <div class="vidDetailOut">
-                        <img class="youtuberIcon" src="pic/cat.png" alt="">
+                        <img class="youtuberIcon" src="pic/test01user.jpg" alt="">
                         <div  class="videoDes">
                             <div class="videoName">
-                                🌈🌟 浪漫可愛的中文歌 | 甜甜的中文歌單~华语流行音乐（....
+                                十一分鐘略懂電子電路：電、電路、電阻、電容、電感....
                             </div>
                             <div class="videoMaker">
-                                哇萨比抓马 WasabiDrama
+                                jasonmel
                             </div>
                             <div class="videoWatchNum">
-                                觀看次數：18萬次，1年前
+                                觀看次數：176萬次，1年前
                             </div>
                         </div>
                     </div>
+                </a>    
                 </div>
 
                 <div class="vidIconDes">
+                <a class="videoLink" href="https://www.youtube.com/watch?v=bm70pwn0zP0">
                     <div class="videoOut">
-                        <img class="video" src="https://picsum.photos/800/400">
-                        </img>    
+                        <img class="video" src="pic/test02.png">
                     </div>
                     <div class="vidDetailOut">
-                        <img class="youtuberIcon" src="pic/cat.png" alt="">
+                        <img class="youtuberIcon" src="pic/test02user.jpg" alt="">
                         <div  class="videoDes">
                             <div  class="videoName">
-                                🌈🌟 浪漫可愛的中文歌 | 甜甜的中文歌單~华语流行音乐（....
+                                AOA - Like a Cat
                             </div>
                             <div class="videoMaker">
-                                哇萨比抓马 WasabiDrama
+                                AOA
                             </div>
                             <div class="videoWatchNum">
-                                觀看次數：18萬次，1年前
+                                觀看次數：1106萬次，9年前
                             </div>
                         </div>
                     </div>
+                </a>
                 </div>
 
                 <div class="vidIconDes">
+                <a class="videoLink" href="https://www.youtube.com/watch?v=q5SG7U76tls">
                     <div class="videoOut">  
-                        <img class="video" src="https://picsum.photos/800/400">
-                        </img>    
+                      <img class="video" src="pic/test03.png">
                     </div>
                     <div class="vidDetailOut">
-                        <img class="youtuberIcon" src="pic/cat.png" alt="">
+                        <img class="youtuberIcon" src="pic/test03user.jpg" alt="">
                         <div  class="videoDes">
                             <div  class="videoName">
-                                🌈🌟 浪漫可愛的中文歌 | 甜甜的中文歌單~华语流行音乐（....
+                                Pitbull - Get It Started ft. Shakira
                             </div>
                             <div class="videoMaker">
-                                哇萨比抓马 WasabiDrama
+                                Pitbull
                             </div>
                             <div class="videoWatchNum">
-                                觀看次數：18萬次，1年前
+                                觀看次數：1.1億次，11年前
                             </div>
                         </div>
                     </div>
+                </a>
                 </div>
 
                 <div class="vidIconDes">
-                    <div class="videoOut">
-                        <img class="video" src="https://picsum.photos/800/400">
-                        </img>    
-                    </div>
-                    <div class="vidDetailOut">
-                        <img class="youtuberIcon" src="pic/cat.png" alt="">
-                        <div  class="videoDes">
-                            <div  class="videoName">
-                                🌈🌟 浪漫可愛的中文歌 | 甜甜的中文歌單~华语流行音乐（....
-                            </div>
-                            <div class="videoMaker">
-                                哇萨比抓马 WasabiDrama
-                            </div>
-                            <div class="videoWatchNum">
-                                觀看次數：18萬次，1年前
+                    <a class="videoLink" href="https://www.youtube.com/watch?v=0cWTmV3WmVk">
+                        <div class="videoOut">
+                          <img class="video" src="pic/test04.png">
+                        </div>
+                        <div class="vidDetailOut">
+                            <img class="youtuberIcon" src="pic/test04user.jpg" alt="">
+                            <div  class="videoDes">
+                                <div  class="videoName">
+                                    JUMP MV /『NARUTO -ナルト-』×『シルエット』| KANA-BOON
+                                </div>
+                                <div class="videoMaker">
+                                    ジャンプチャンネル
+                                </div>
+                                <div class="videoWatchNum">
+                                    觀看次數：195萬次，9個月前
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="vidIconDes">
-                    <div class="videoOut">
-                        <img class="video" src="https://picsum.photos/800/400">
-                    </img>    
-                </div>
-                    <div class="vidDetailOut">
-                        <img class="youtuberIcon" src="pic/cat.png" alt="">
-                        <div  class="videoDes">
-                            <div  class="videoName">
-                                🌈🌟 浪漫可愛的中文歌 | 甜甜的中文歌單~华语流行音乐（....
-                            </div>
-                            <div class="videoMaker">
-                                哇萨比抓马 WasabiDrama
-                            </div>
-                            <div class="videoWatchNum">
-                                觀看次數：18萬次，1年前
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="vidIconDes">
-                    <div class="videoOut" >
-                         <img class="video" src="https://picsum.photos/800/400">
-                        </img>    
-                    </div>
-                    <div class="vidDetailOut">
-                        <img class="youtuberIcon" src="pic/cat.png" alt="">
-                        <div  class="videoDes">
-                            <div  class="videoName">
-                                🌈🌟 浪漫可愛的中文歌 | 甜甜的中文歌單~华语流行音乐（....
-                            </div>
-                            <div class="videoMaker">
-                                哇萨比抓马 WasabiDrama
-                            </div>
-                            <div class="videoWatchNum">
-                                觀看次數：18萬次，1年前
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="vidIconDes">
-                    <div class="videoOut" >
-                         <img class="video" src="https://picsum.photos/800/400">
-                        </img>    
-                    </div>
-                    <div class="vidDetailOut">
-                        <img class="youtuberIcon" src="pic/cat.png" alt="">
-                        <div  class="videoDes">
-                            <div  class="videoName">
-                                🌈🌟 浪漫可愛的中文歌 | 甜甜的中文歌單~华语流行音乐（....
-                            </div>
-                            <div class="videoMaker">
-                                哇萨比抓马 WasabiDrama
-                            </div>
-                            <div class="videoWatchNum">
-                                觀看次數：18萬次，1年前
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="vidIconDes">
-                    <div class="videoOut" >
-                         <img class="video" src="https://picsum.photos/800/400">
-                        </img>    
-                    </div>
-                    <div class="vidDetailOut">
-                        <img class="youtuberIcon" src="pic/cat.png" alt="">
-                        <div  class="videoDes">
-                            <div  class="videoName">
-                                🌈🌟 浪漫可愛的中文歌 | 甜甜的中文歌單~华语流行音乐（....
-                            </div>
-                            <div class="videoMaker">
-                                哇萨比抓马 WasabiDrama
-                            </div>
-                            <div class="videoWatchNum">
-                                觀看次數：18萬次，1年前
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                    </a>
+                </div>               
                     
+
+                <div class="vidIconDes">
+                <a class="videoLink" href="https://www.youtube.com/watch?v=QqgGjP182uE">
+                    <div class="videoOut">
+                        <img class="video" src="pic/test05.png">
+                    </div>
+                    <div class="vidDetailOut">
+                        <img class="youtuberIcon" src="pic/test05user.jpg" alt="">
+                        <div  class="videoDes">
+                            <div  class="videoName">
+                                Elton John & Taron Egerton - Making '(I'm Gonna) Love Me Again
+                            </div>
+                            <div class="videoMaker">
+                                Elton John
+                            </div>
+                            <div class="videoWatchNum">
+                                觀看次數：30萬次，4年前
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                <div class="vidIconDes">
+                <a class="videoLink" href="https://www.youtube.com/watch?v=dty59cueb94">
+                    <div class="videoOut" >
+                       <img class="video" src="pic/test06.png">
+                    </div>
+                    <div class="vidDetailOut">
+                        <img class="youtuberIcon" src="pic/test06user.jpg" alt="">
+                        <div  class="videoDes">
+                            <div  class="videoName">
+                                LiSA『HELLO WORLD』MUSiC CLiP
+                            </div>
+                            <div class="videoMaker">
+                                LiSA Official YouTube
+                            </div>
+                            <div class="videoWatchNum">
+                                觀看次數：122萬次，4個月前
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+
+                <div class="vidIconDes">
+                    <a class="videoLink" href="https://www.youtube.com/watch?v=jLFH9Q3VQsc">
+                        <div class="videoOut">
+                          <img class="video" src="pic/test09.png">
+                        </div>
+                        <div class="vidDetailOut">
+                            <img class="youtuberIcon" src="pic/test09uer.jpg" alt="">
+                            <div  class="videoDes">
+                                <div  class="videoName">
+                                    89. Listen, Listen, Listen: How to Build Deep Connections
+                                </div>
+                                <div class="videoMaker">
+                                    Stanford Graduate School of Business
+                                </div>
+                                <div class="videoWatchNum">
+                                    觀看次數：87萬次，1年前
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                 <div class="vidIconDes">
+                 <a class="videoLink" href="https://www.youtube.com/watch?v=mFbILexYSQg">
+                    <div class="videoOut" >
+                       <img class="video" src="pic/test07.png">
+                    </div>
+                    <div class="vidDetailOut">
+                        <img class="youtuberIcon" src="pic/test07user.jpg" alt="">
+                        <div  class="videoDes">
+                            <div  class="videoName">
+                                IU '홀씨(Holssi)' MV
+                            </div>
+                            <div class="videoMaker">
+                                이지금 [IU Official]
+                            </div>
+                            <div class="videoWatchNum">
+                                觀看次數：1044萬次，2個月前
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                 <div class="vidIconDes">
+                 <a class="videoLink" href="https://www.youtube.com/watch?v=LTGkt3GrGNY">
+                    <div class="videoOut" >
+                      <img class="video" src="pic/test08.png">
+                    </div>
+                    <div class="vidDetailOut">
+                        <img class="youtuberIcon" src="pic/test08user.jpg" alt="">
+                        <div  class="videoDes">
+                            <div  class="videoName">
+                                【MAD】葬送的芙莉莲『放晴 / 晴る 』 - ヨルシカ
+                            </div>
+                            <div class="videoMaker">
+                                Reynald
+                            </div>
+                            <div class="videoWatchNum">
+                                觀看次數：71萬次，3個月前
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+                   
+                <div class="vidIconDes">
+                    <a class="videoLink" href="https://www.youtube.com/watch?v=SLEenW2UiUw">
+                       <div class="videoOut" >
+                         <img class="video" src="pic/test10.png">
+                       </div>
+                       <div class="vidDetailOut">
+                           <img class="youtuberIcon" src="pic/test10user.jpg" alt="">
+                           <div  class="videoDes">
+                               <div  class="videoName">
+                                What is climate change? - The Climate Question, BBC World...
+                               </div>
+                               <div class="videoMaker">
+                                BBC World Service
+                               </div>
+                               <div class="videoWatchNum">
+                                   觀看次數：71萬次，3個月前
+                               </div>
+                           </div>
+                       </div>
+                   </a>
+                </div>
+   
+                <div class="vidIconDes">
+                    <a class="videoLink" href="https://www.youtube.com/watch?v=SLEenW2UiUw">
+                       <div class="videoOut" >
+                         <img class="video" src="pic/test11.png">
+                       </div>
+                       <div class="vidDetailOut">
+                           <img class="youtuberIcon" src="pic/test11user.jpg" alt="">
+                           <div  class="videoDes">
+                               <div  class="videoName">
+                                Feed your brain ⏲️ 6 Minute English
+                               </div>
+                               <div class="videoMaker">
+                                BBC Learning English
+                               </div>
+                               <div class="videoWatchNum">
+                                   觀看次數：66萬次，2個月前
+                               </div>
+                           </div>
+                       </div>
+                   </a>
+                </div>
+
+
+                <div class="vidIconDes">
+                    <a class="videoLink" href="https://www.youtube.com/watch?v=qu_FSptjRic">
+                       <div class="videoOut" >
+                         <img class="video" src="pic/test12.png">
+                       </div>
+                       <div class="vidDetailOut">
+                           <img class="youtuberIcon" src="pic/test12user.jpg" alt="">
+                           <div  class="videoDes">
+                               <div  class="videoName">
+                                BEYOND【海闊天空】Music Video (粵) (HD)
+                               </div>
+                               <div class="videoMaker">
+                                滾石唱片 ROCK RECORDS
+                               </div>
+                               <div class="videoWatchNum">
+                                   觀看次數：1.3億次，12年前
+                               </div>
+                           </div>
+                       </div>
+                   </a>
+                </div>
 
 
             </div>
 <!-- 影片們 6-->
 
+
+
+<!-- 載入的漩渦 8-->
+<div id="wrapper">
+    <div class="loadOut">
+      <div class="loader">
+        <svg class="circle" viewBox="25 25 50 50" >
+          <circle class="loadInside" cx="50" cy="50" r="20" fill="none" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+</div>
+<!-- 載入的漩渦 8-->
 
         </div> 
 
@@ -501,60 +586,44 @@ function loadData(){
     function isScrollAtBottom(){
         if(!pageIfTop&&pageTopState()){
             pageIfTop=true;
-
             // console.log("到底了");
 
 
 
+            // const wrapper=document.querySelector("#wrapper");
+            // wrapper.style.display='none';
 
-            //要發生的事
-            
 
+            //事件2-載入資料
             fetch("youtube_2.json")
             .then((res)=>res.json())
             .then((vidJSON)=>{
             // console.log(vidJSON);
-            for(let i=0;i<8;i++){
-            let videoData=vidJSON[i];
-
-            const createVid= document.createElement("div");
-            createVid.className="vidIconDes";
-
-//給另一個class videoTwo是為了解決迷的排版問題
-            createVid.innerHTML=`<div class="vidIconDes">
-                    <div class="videoOut">
-                        <img class="video videoTwo" src="https://picsum.photos/800/400">
-                        </img>    
-                    </div>
-
-                    <div class="vidDetailOut">
-                        <img  class="youtuberIcon" src="pic/${videoData.video_makerPic}.png" alt="">
-                        <div  class="videoDes">
-                            <div class="videoName">
-                                ${videoData.video_name}
+                for(let i=0;i<8;i++){
+                    let videoData=vidJSON[i];
+                    const createVid= document.createElement("div");
+                    createVid.className="vidIconDes";  //給另一個class videoTwo是為了解決迷的排版問題
+                    createVid.innerHTML=`
+                        <div class="vidIconDes">
+                            <div class="videoOut">
+                               <img class="video videoTwo" src="https://picsum.photos/800/400"></img>    
                             </div>
-                            <div class="videoMaker">
-                                ${videoData.video_maker}
+                            <div class="vidDetailOut">
+                                <img class="youtuberIcon" src="pic/${videoData.video_makerPic}.png" alt="">
+                                <div class="videoDes">
+                                   <div class="videoName">${videoData.video_name}</div>
+                                   <div class="videoMaker">${videoData.video_maker}</div>
+                                   <div class="videoWatchNum">觀看次數 : ${videoData.video_likeNum2}次，${videoData.video_uploadTime}</div>
+                                </div>
                             </div>
-                            <div class="videoWatchNum">
-                                觀看次數 : ${videoData.video_likeNum2}次，${videoData.video_uploadTime}
-                            </div>
-                        </div>
-                    </div>
-                </div>`
-
-
-
-
-
-            const vidIconDes= document.querySelector('.vidIconDes');
-            const videosSpace= document.querySelector(".videosSpace");
-            videosSpace.appendChild(createVid);
-
-}
+                        </div>`
+                    const vidIconDes= document.querySelector('.vidIconDes');
+                    const videosSpace= document.querySelector(".videosSpace");
+                    videosSpace.appendChild(createVid);
+            }
 
             })
-            //要發生的事
+            //事件2-載入資料
 
             //滾輪到page底部後過一秒才會更改pageIfTop狀態，讓if的判斷式可以是true
             setTimeout(() => {
@@ -566,6 +635,21 @@ function loadData(){
 
 
     window.addEventListener("scroll",isScrollAtBottom);
+
+
+
+//漢堡
+document.addEventListener('DOMContentLoaded', function() {
+          const navInDiv = document.querySelector('.navInDiv');
+          const mainAsideLeft = document.querySelector('.mainAsideLeft');
+
+          navInDiv.addEventListener('click', function() {
+            navInDiv.classList.toggle('openNavInDiv');
+            mainAsideLeft.classList.toggle('openMainAsideLeft');
+          });
+        });
+//漢堡
+
 
 </script>
      <!-- RWD的media調整 -->

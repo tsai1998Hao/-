@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漢堡自己測試</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>My Websitesss</h1>
+        <nav>
+          <div id="menuToggle">
+            <input type="checkbox" id="menuCheckbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <ul class="desktop-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    
+
+
+
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  var navTrigger = document.querySelector('.nav__trigger');
+  var navMenu = document.querySelector('.nav__menu--right');
+
+  navTrigger.addEventListener('click', function() {
+    navMenu.classList.toggle('open');
+    navTrigger.classList.toggle('inverse');
+  });
+});
+
+</script>
+

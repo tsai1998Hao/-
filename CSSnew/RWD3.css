@@ -1,0 +1,50 @@
+/* <!-- 左側欄位 --> */
+
+
+.mainAsideLeft{
+    width: 600px;
+    height: 1000px;
+    padding: 10px;
+    /* border: 2px solid rgb(0, 255, 21); */
+}
+.aside_icon_title{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+
+.subscribe{
+    border-bottom: 1px solid grey;
+    padding-bottom: 25px;
+}
+.yoruContent{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.yoruContentDiv{
+    margin-right: 15px;
+}
+.videoYouLike{
+    border-bottom: 1px solid grey;
+    padding-left: 13px;
+    padding-bottom: 25px;  
+}
+
+
+
+
+.aside_icon_title >i {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.subscribeMaker {
+    height: 24px;
+    margin-right: 20px;
+}
+/* <!-- 左側欄位 --> */

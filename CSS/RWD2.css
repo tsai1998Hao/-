@@ -14,11 +14,18 @@
     display: flex ;
     align-items: center;
 }
+
+.fa-bars{
+    cursor: pointer;
+    margin-right: 20px;
+
+}
 .navImg{
     width: 90px;
     height: 20px;
     /* border: 1px solid red; */
 }
+
 
 
 

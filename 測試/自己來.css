@@ -1,0 +1,31 @@
+body{
+    overflow: hidden;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    position: relative;
+  }
+
+
+  .openButton{
+    z-index: 2;
+  }
+.openButton2{
+
+}
+
+.showList{
+    position: absolute;
+    left: -300px;
+    height: 100%;
+    width: 250px;
+    height: 100%;
+    background-color: lightgreen;
+    z-index: 1;
+    transition: 400ms ease;
+}
+.showList2{
+    transform: translateX(300px);
+}

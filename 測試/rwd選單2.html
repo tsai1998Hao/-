@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/測試/rwd選單2.css">
+</head>
+
+
+<body>
+
+      <nav>
+        <a href="#">
+          <p class="trigger">123</p>
+        </a>
+      </nav>
+      
+      <aside class="menu">
+        <ul>
+          <li>
+            <a href="">
+              <p>Link</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p>Link</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p>Link</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p>Link</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p>Link</p>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var navTrigger = document.querySelector('.trigger');
+          var navMenu = document.querySelector('.menu');
+
+          navTrigger.addEventListener('click', function() {
+            navTrigger.classList.toggle('trigger2');
+            navMenu.classList.toggle('menu2');
+          });
+        });
+    </script>
+</body>
+</html>

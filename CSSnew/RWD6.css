@@ -1,0 +1,67 @@
+/* 影片 */
+
+.videosSpace{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+}
+.vidIconDes{
+    width: 19vw;
+    height: 300px;
+    margin: 8px;
+    /* border: 2px solid rgb(34, 255, 0); */
+}
+.videoLink{
+    text-decoration: none;
+    color: white;
+    /* border: 2px solid rgb(255, 0, 195); */
+}
+
+.video{
+    width: 19vw;
+    /* height: 176px; */
+    margin-bottom: 4px;
+    /* border: 2px solid rgb(255, 157, 0); */
+}
+/* .videoOut{
+    width: 320px;
+    height: 196px;
+    border: 2px solid slateblue;
+} */
+.vidDetailOut{
+    display:flex; 
+    /* height: 130px;  */
+    /* width:300px; */
+    /* border: 2px solid brown; */
+}
+
+
+/* //////////////////////////////////////////////////// */
+
+
+.youtuberIcon{
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 50px;
+    /* border: 2px solid red; */
+}
+.videoDes{
+    /* border: 2px solid red; */
+}
+.videoName{
+    /* border: 2px solid red; */
+    display: -webkit-box;
+  -webkit-line-clamp: 2; /* 限制顯示行數為2行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.videoMaker{
+    margin-top:10px;
+    color:grey;
+    font-size:13px;
+}
+.videoWatchNum{
+    color:grey;
+}
+/* 影片 */

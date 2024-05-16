@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Hamburger Menu</title>
+<link rel="stylesheet" href="/測試/rwd選單.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>My Websitesss</h1>
+    <nav>
+      <div id="menuToggle">
+        <input type="checkbox" id="menuCheckbox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <ul class="desktop-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var menuToggle = document.getElementById("menuToggle");
+  var menuCheckbox = document.getElementById("menuCheckbox");
+
+  menuToggle.addEventListener("click", function () {
+    menuCheckbox.checked = !menuCheckbox.checked;
+  });
+});
+</script>
+
+</body>
+</html>

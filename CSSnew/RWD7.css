@@ -1,0 +1,365 @@
+/*六個:2228 */
+/*五個:2227px-~~~~1901px */
+/*四個:1900px-~~~~1576px */
+/*三個:1575px-~~~~1313px */
+/*三個，左側縮圖:1312px-~~~~1081px */
+/*兩個，左側縮圖:1080px-~~~~px */
+
+
+
+/*五個:2227px-~~~~1901px */
+@media (max-width:2228px){
+
+}
+
+
+
+
+/*四個:1900px-~~~~1576px */
+@media (max-width:1901px){
+
+}
+
+
+
+
+
+/*三個:1575px-~~~~1313px */
+@media (max-width:1576px){
+
+}
+
+
+
+
+/* @media (max-width:1473px){
+} 
+
+/* @media (max-width:1450px){
+} */
+
+
+
+
+/*三個，原本左側縮圖，我改直接消失。:1312px-~~~~1081px */
+@media (max-width:1313px){
+/* 左側欄位 3 */
+    .mainAsideLeft{
+        position: absolute;
+        left: -300px;
+        width: 250px;
+        /* height: 100%; */
+        background-color: rgb(26, 34, 26);
+        opacity: 0.9;
+        transition: 400ms ease;
+    }
+    .openMainAsideLeft{
+        transform: translateX(300px);
+    }
+/* 左側欄位 3 */
+
+/* 影片 6*/
+.videosSpace{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.vidIconDes{
+    width: 30vw;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid rgb(34, 255, 0); */
+
+}
+.videoLink{
+    /* border: 2px solid rgb(255, 0, 195); */
+}
+
+.video{
+    width: 30vw;
+    /* height: 176px; */
+    /* border: 2px solid rgb(255, 157, 0); */
+}
+.vidDetailOut{
+    /* height: 130px;  */
+    /* width:300px; */
+    /* border: 2px solid brown; */
+}
+
+/* 影片 6*/
+
+}
+
+
+
+/* 自己加的 */
+@media (max-width:1155px){
+/* 上面欄位 2 */
+.navMid{
+    width: 58vw;
+}
+.searchInput{
+    width: 43vw;
+}
+/* 上面欄位 2 */
+}
+
+
+
+
+/*兩個，左側縮圖:1080px-~~~~px */
+@media (max-width:1081px){
+/* 上面欄位 2 */
+.navMid{
+    width: 50vw;
+}
+.searchInput{
+    width: 40vw;
+}
+/* 上面欄位 2 */
+/* 影片 6*/
+.videosSpace{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.vidIconDes{
+    width: 30vw;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid rgb(34, 255, 0); */
+
+}
+.videoLink{
+    /* border: 2px solid rgb(255, 0, 195); */
+}
+
+.video{
+    width: 30vw;
+    /* height: 176px; */
+    /* border: 2px solid rgb(255, 157, 0); */
+}
+.vidDetailOut{
+    /* height: 130px;  */
+    /* width:300px; */
+    /* border: 2px solid brown; */
+}
+
+/* 影片 6*/
+
+
+
+
+
+}
+
+
+
+
+/* 自己加的 */
+@media  (max-width: 1004px){
+
+
+
+    /* 影片 6*/
+.videosSpace{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.vidIconDes{
+    width: 40vw;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid rgb(34, 255, 0); */
+
+}
+.videoLink{
+    /* border: 2px solid rgb(255, 0, 195); */
+}
+
+.video{
+    width: 35vw;
+    /* height: 176px; */
+    /* border: 2px solid rgb(255, 157, 0); */
+}
+.vidDetailOut{
+    /* height: 130px;  */
+    /* width:300px; */
+    /* border: 2px solid brown; */
+}
+.videoName{
+    width: 200px;
+
+}
+/* 影片 6*/
+
+}
+
+
+
+
+
+@media (max-width:820px){
+/* 上面欄位 2 */
+.navMid{
+    width: 55vw;
+}
+.searchInput{
+    width: 30vw;
+}
+/* 上面欄位 2 */
+    /* 影片 6*/
+    .videosSpace{
+        display: flex;
+        justify-content: center;
+        /* border: 2px solid red; */
+    }
+    .vidIconDes{
+        width: 90vw;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        /* border: 2px solid rgb(34, 255, 0); */
+    
+    }
+    .videoLink{
+        /* border: 2px solid rgb(255, 0, 195); */
+    }
+    
+    .video{
+        width: 75vw;
+        /* height: 176px; */
+        /* border: 2px solid rgb(255, 157, 0); */
+    }
+    .vidDetailOut{
+        /* height: 130px;  */
+        /* width:300px; */
+        /* border: 2px solid brown; */
+    }
+    .videoName{
+        width: 68vw;
+        /* border: 2px solid gold; */
+    }
+    /* 影片 6*/
+    
+
+
+
+
+}
+
+@media(max-width:700px){
+        /* 影片 6*/
+        .videosSpace{
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid red; */
+        }
+        .vidIconDes{
+            width: 90vw;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            /* border: 2px solid rgb(34, 255, 0); */
+        
+        }
+        .videoLink{
+            /* border: 2px solid rgb(255, 0, 195); */
+        }
+        
+        .video{
+            width: 75vw;
+            /* height: 176px; */
+            /* border: 2px solid rgb(255, 157, 0); */
+        }
+        .vidDetailOut{
+            /* height: 130px;  */
+            /* width:300px; */
+            /* border: 2px solid brown; */
+        }
+        .videoName{
+            width: 65vw;
+            /* border: 2px solid gold; */
+        }
+        /* 影片 6*/
+    
+}
+
+@media (max-width:628px){
+/* 上面欄位 2 */
+.navMid{
+    width: 35vw;
+}
+.searchInput{
+    width: 15vw;
+    padding-left: 2px;
+}
+.navRight{
+    margin-right: 10px;
+}
+/* 上面欄位 2 */
+
+.videosSpace{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.vidIconDes{
+    width: 90vw;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* border: 2px solid rgb(34, 255, 0); */
+
+}
+.videoLink{
+    /* border: 2px solid rgb(255, 0, 195); */
+}
+
+.video{
+    width: 75vw;
+    /* height: 176px; */
+    /* border: 2px solid rgb(255, 157, 0); */
+}
+.vidDetailOut{
+    /* height: 130px;  */
+    /* width:300px; */
+    /* border: 2px solid brown; */
+}
+.videoName{
+    width: 65vw;
+    /* border: 2px solid gold; */
+}
+/* 影片 6*/
+
+
+
+
+
+}
+
+
+
+
+@media (max-width:500px){
+    
+}
+
+
+
+
+
+@media (max-width:380px){
+
+    
+}
